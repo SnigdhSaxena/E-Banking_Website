@@ -5,6 +5,12 @@
 </head>
 <?php
 session_start();
+if($_SESSION['acc'])
+{}
+else
+{
+    header('Location: front.php');
+}
 ?>
 <body>
 	<?php include 'db_connect.php'; ?>

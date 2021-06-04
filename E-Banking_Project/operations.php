@@ -6,6 +6,12 @@
 <?php
     session_start();
 	$user=$_SESSION['user'];
+	if($_SESSION['user'])
+	{}
+    else
+    {
+    	header('Location: front.php');
+    }
 	?>
 <body>
 	<?php include 'Operations.html'; ?>

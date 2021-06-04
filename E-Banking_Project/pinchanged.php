@@ -12,6 +12,12 @@
 </head>
 <?php
 session_start();
+if($_SESSION['user'])
+{}
+else
+{
+	header('Location: front.php');
+}
 ?>
 <body>
 	<?php 'db_connect.php'; ?>

@@ -15,6 +15,12 @@
 
 	<?php
 	session_start();
+	if($_SESSION['acc'])
+	{}
+    else
+    {
+    	header('Location: front.php');
+    }
 	?>
 	<form>
 		<h1>Account Number</h1>
